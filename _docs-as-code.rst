@@ -71,22 +71,22 @@ Instead, Sphinx configuration is centrally managed in SQuaRE's documenteer_ pack
    This is an acceptable trade-off for a development environment.
    In the continuous integration environment, where all documentation content is available, documentation builds can be configured to fail on broken links.
 
-Integrated documentation: the pipelines_docs repository
--------------------------------------------------------
+Integrated documentation: the pipelines_lsst_io repository
+----------------------------------------------------------
 
-Besides documentation embedded in Science Pipelines packages, there is a core documentation repository: https://github.com/lsst/pipelines_docs.
+Besides documentation embedded in Science Pipelines packages, there is a core documentation repository: https://github.com/lsst/pipelines_lsst_io.
 This repository hosts higher-level documentation that crosses modules, including: installation guides, release notes, getting-started tutorials, processing and framework documentation.
 
-When pipelines_docs_ is built, the ``doc/`` directories of each package is linked into the cloned pipelines_docs_ repository::
+When pipelines_lsst_io_ is built, the ``doc/`` directories of each package is linked into the cloned pipelines_lsst_io_ repository::
 
-   pipelines_docs/
+   pipelines_lsst_io/
       index.rst
       _static
       ...
       afw/ -> linked or copied from afw/doc/
       pipe_base -> linked or copied from pipe_base/doc/
 
-With these linked package ``doc`` directories, the Sphinx build for ``pipelines_docs`` is able to build all documentation simultaneously, and resolve all links within the project.
+With these linked package ``doc`` directories, the Sphinx build for ``pipelines_lsst_io`` is able to build all documentation simultaneously, and resolve all links within the project.
 
 The `LTD Mason tool <ltd-mason>`_ (see SQR-006_) was designed to make the package documentation links, assuming that lsstsw was being used (as it it is in the Jenkins environment).
-However, it may be more appropriate to make `pipelines_docs` agnostic of lsstsw, which implies that `pipelines_docs` should itself be an EUPS-managed package, and that its build logic should also be hosted in ``sconsUtils``.
+However, it may be more appropriate to make `pipelines_lsst_io` agnostic of lsstsw, which implies that `pipelines_lsst_io` should itself be an EUPS-managed package, and that its build logic should also be hosted in ``sconsUtils``.
