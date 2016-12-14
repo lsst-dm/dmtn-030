@@ -12,5 +12,6 @@
 .. include:: _audience.rst
 .. include:: _docs-as-code.rst
 .. include:: _topic-based-docs.rst
+.. include:: _homepage-view.rst
 .. include:: _api-ref.rst
 .. include:: _links.rst

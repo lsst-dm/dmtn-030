@@ -10,3 +10,4 @@
 .. _breathe: http://breathe.readthedocs.io/en/latest/
 .. _sphinx: http://www.sphinx-doc.org/
 .. _RFC-214: https://jira.lsstcorp.org/browse/RFC-214
+.. _LDM-151: https://ldm-151.lsst.io/v/draft
