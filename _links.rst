@@ -5,3 +5,8 @@
 .. _ltd-mason: https://ltd-mason.lsst.io
 .. _LDM-493: https://ldm-493.lsst.io/v/v1
 .. _Observing Strategy Whitepaper: https://github.com/LSSTScienceCollaborations/ObservingStrategy
+.. _astropy-helpers: https://github.com/astropy/astropy-helpers
+.. _Numpydoc: https://developer.lsst.io/docs/py_docs.html
+.. _breathe: http://breathe.readthedocs.io/en/latest/
+.. _sphinx: http://www.sphinx-doc.org/
+.. _RFC-214: https://jira.lsstcorp.org/browse/RFC-214

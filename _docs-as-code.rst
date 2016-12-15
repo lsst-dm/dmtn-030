@@ -1,3 +1,5 @@
+.. _docs-as-code:
+
 Documentation as code
 =====================
 
