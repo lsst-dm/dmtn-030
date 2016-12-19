@@ -21,7 +21,7 @@ Here, ``index.rst`` is a reStructuredText document we refer to as a *module topi
 The ``tasks/`` directory hosts *task topic pages* for any pipeline tasks implemented in that module.
 The ``_static/`` directory is a space for non-reStructuredText content that is copied verbatim to the built site.
 
-Most Science Pipelines packages host a single *module*, but there exceptions, like ``afw``.
+Most Science Pipelines packages host a single *module*, but there are exceptions like ``afw``.
 In this case, there is an additional level of directories::
 
    doc/

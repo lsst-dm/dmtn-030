@@ -26,10 +26,10 @@ This package collection crosses DM team lines, but reflects how the software is 
    A related issue is the name of the product itself.
    This segment of the Data Management System does not have name; while the name "Stack" is often used, that refers to all software in the DMS.
 
-   This technote uses the branding "LSST Science Pipelines" and "pipelines.lsst.io", though technically this is an appropriate of of the collective name of work by the University of Washington and Princeton teams.
+   This technote uses the branding "LSST Science Pipelines" and "pipelines.lsst.io", though technically this is an appropriation of the collective name of work by the University of Washington and Princeton teams.
    The Science Pipelines product and documentation site also includes elements from the Data Access, Science User Interface Toolkit, Middleware and SQuaRE teams.
    
-   Overall, the product naming is an unresolved issue and acnowledge that the pipelines.lsst.io branding may change.
+   Overall, the product naming is an unresolved issue and acknowledge that the pipelines.lsst.io branding may change.
 
 Developer documentation
 -----------------------
