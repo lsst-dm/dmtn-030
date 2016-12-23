@@ -1,3 +1,5 @@
+.. _homepage-design:
+
 Designing the homepage
 ======================
 

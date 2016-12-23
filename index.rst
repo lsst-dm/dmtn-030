@@ -13,6 +13,7 @@
 .. include:: _docs-as-code.rst
 .. include:: _topic-based-docs.rst
 .. include:: _homepage-view.rst
+.. include:: _processing-topic.rst
 .. include:: _framework-topic.rst
 .. include:: _module-topic.rst
 .. include:: _task-topic.rst
