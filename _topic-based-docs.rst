@@ -1,3 +1,5 @@
+.. _topic-based-docs:
+
 Topic-based documentation
 =========================
 
