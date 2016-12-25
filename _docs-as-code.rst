@@ -5,6 +5,8 @@ The Science Pipelines documentation uses a *documentation-as-code* architecture.
 Documentation is stored in pipelines package repositories, and built by DM's standard continuous integration system Sphinx into a static HTML site that is published to the web with LSST the Docs.
 This section outlines the basic technical design of the Science Pipelines documentation.
 
+.. _docs-in-packages:
+
 Documentation in packages
 -------------------------
 
