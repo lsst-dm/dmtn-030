@@ -28,6 +28,13 @@ Each framework has a homepage that conforms to the *framework topic type*, which
 - :ref:`framework-tutorials`.
 - :ref:`framework-modules`.
 
+.. _fig-framework-mockup:
+
+.. figure:: /_static/framework-mockup.svg
+   :width: 100%
+
+   Mockup of the framework topic type.
+
 .. _framework-title:
 
 Title

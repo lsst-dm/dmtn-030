@@ -15,6 +15,13 @@ As processing topic consists of the following components:
 - :ref:`Tutorials <processing-tutorials>`.
 - :ref:`Command line tasks <processing-tasks>`.
 
+.. _fig-processing-mockup:
+
+.. figure:: /_static/processing-mockup.svg
+   :width: 100%
+
+   Mockup of processing topic type pages.
+
 .. _processing-title:
 
 Title

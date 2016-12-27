@@ -11,11 +11,12 @@ We envision four distinct areas on the homepage: :ref:`preliminaries <homepage-p
 Each area organizes and links to topics of distinct types.
 The following sub-sections motivate each area of the homepage, while later sections describe the design of each topic type in greater detail.
 
-.. The homepage design consists of four areas: 
-.. The following section.
-.. A 'preliminaries' section introduces and orients users to the LSST Science Pipelines.
-.. A 'processing' section is intended for users who build and run astronomical pipelines.
-.. Further details for users
+.. _fig-homepage-mockup:
+
+.. figure:: /_static/homepage-mockup.svg
+   :width: 100%
+
+   Mockup of the Science Pipelines documentation homepage layout.
 
 .. _homepage-preliminaries:
 
@@ -80,17 +81,17 @@ Frameworks are collections of modules (possibly crossing EUPS packages) that imp
 Examples of frameworks are:
 
 - Observatory interface (obs) framework.
-  Measurement framework.
-  Modelling framework.
-  Task framework.
-  Butler (data access) framework.
-  Data structures framework.
-  Geometry framework.
-  Display framework.
-  Logging framework.
-  Debug framework.
-  QA (validate) framework.
-  Build system.
+- Measurement framework.
+- Modelling framework.
+- Task framework.
+- Butler (data access) framework.
+- Data structures framework.
+- Geometry framework.
+- Display framework.
+- Logging framework.
+- Debug framework.
+- QA (validate) framework.
+- Build system.
 
 By organizing topics around frameworks, we have a platform to discuss their functionality for both end users (how to use the framework's features) and developers (patterns for developing in and against the framework) in a way that's not constrained by implementation details (module organization).
 

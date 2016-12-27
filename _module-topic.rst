@@ -18,6 +18,13 @@ The module topic type consists of the following components:
 - :ref:`Packaging <module-packaging>`.
 - :ref:`Related documentation <module-related-docs>`.
 
+.. _fig-module-mockup:
+
+.. figure:: /_static/module-mockup.svg
+   :width: 100%
+
+   Mockup of module topic types.
+
 .. _module-title:
 
 Title component
