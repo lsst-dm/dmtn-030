@@ -22,11 +22,11 @@ Topic type components
 
 Each framework has a homepage that conforms to the *framework topic type*, which has the following components:
 
-- :ref:`framework-title`.
-- :ref:`framework-context`.
-- :ref:`framework-concepts`.
-- :ref:`framework-tutorials`.
-- :ref:`framework-modules`.
+- :ref:`Title <framework-title>`.
+- :ref:`Context <framework-context>`.
+- :ref:`In depth <framework-concepts>`.
+- :ref:`Tutorials <framework-tutorials>`.
+- :ref:`Modules <framework-modules>`.
 
 .. _fig-framework-mockup:
 
@@ -52,8 +52,8 @@ A context paragraph establishes what the framework is for, and what the framewor
 
 .. _framework-concepts:
 
-Framework concepts
-^^^^^^^^^^^^^^^^^^
+In depth
+^^^^^^^^
 
 This section provides a table of contents (``toctree``) for additional topics that cover individual framework concepts.
 Concept topics can include guides for developing against the framework, and descriptions of the basic ideas implemented by the framework.
@@ -62,9 +62,10 @@ Concept topics can include guides for developing against the framework, and desc
 Generally, the first topic should be an overview.
 The overview topic's narrative introduces and links to other framework topics.
 
-.. todo::
-
-   Include examples.
+..
+  .. todo::
+  
+     Include examples.
 
 .. _framework-tutorials:
 

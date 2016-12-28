@@ -41,11 +41,11 @@ Processing section
 ------------------
 
 A common task for readers (both community end users, and indeed, the DM team itself) is to *use* the Science Pipelines.
-This is a distinct viewpoint from documenting the Science Pipeline's ground-up from implementation (modules, and frameworks).
+This is a distinct viewpoint from documenting the Science Pipelines's implementation (modules, and frameworks).
 Rather, the processing section focuses on how to organize data, use command line tasks to process data, and consume those outputs for scientific investigations.
-And while topics in the processing section defer to :ref:`task topics <task-type>` as definitive self-contained scientific descriptions algorithms, the processing section is used to frame these command line tasks and help astronomers make judgments about how they are used for science.
+And while topics in the processing section defer to :ref:`task topics <task-type>` as definitive self-contained scientific descriptions of algorithms, the processing section is used to frame these command line tasks and help astronomers make judgments about how they are used for science.
 
-Based on the Twinkles pipeline, which uses the LSST Science Pipelines, we recognized that processing can be organized into *contexts*:
+Based on the Twinkles pipeline, which uses the LSST Science Pipelines, we recognized that processing can be organized into *contexts*.
 Each context has a well-defined type of input, well-defined types of outputs, and well-defined types of measurements.
 A core set of contexts is:
 
@@ -76,7 +76,7 @@ On the homepage, each listed context is a link to a :ref:`processing topic <proc
 Frameworks section
 ------------------
 
-To bridge high level usage documentation to low-level API references, we realized that frameworks are an ideal platform to *introduce* implementation details.
+To bridge high level usage documentation to low-level API references, we realized that frameworks are an ideal platform for introducing and framing implementation documentation.
 Frameworks are collections of modules (possibly crossing EUPS packages) that implement functionality.
 Examples of frameworks are:
 
@@ -93,9 +93,9 @@ Examples of frameworks are:
 - QA (validate) framework.
 - Build system.
 
-By organizing topics around frameworks, we have a platform to discuss their functionality for both end users (how to use the framework's features) and developers (patterns for developing in and against the framework) in a way that's not constrained by implementation details (module organization).
+By organizing topics around frameworks, we have a platform to discuss their functionality for both end users (how to use the framework's features) and developers (patterns for developing in and with the framework) in a way that's not constrained by implementation details (module organization).
 
-The frameworks section of the homepage lists each frameworks name, along with a descriptive subtitle.
+The frameworks section of the homepage lists each framework's name, along with a descriptive subtitle.
 Each item is a link to a corresponding :ref:`framework topic <framework-type>`.
 
 .. _homepage-modules:

@@ -1,8 +1,10 @@
-The audience of pipelines.lsst.io
-=================================
+.. _audience:
 
-Audience is a fundamental driver of design.
-In our documentation design exercise, we attempted to identify who the core users of the LSST Science Pipelines are, and what their documentation needs are.
+The audiences of pipelines.lsst.io
+==================================
+
+Audience needs drive design.
+In this documentation design exercise, we attempted to identify who the core users of the LSST Science Pipelines are, and what their documentation needs are.
 
 We identified the following groups:
 
@@ -37,5 +39,6 @@ We identified the following groups:
 
 We conclude that DM is the most active user group, and also has the greatest documentation needs.
 The needs of other groups are consistent with DM's.
-From a user research perspective this is useful, because if we build pipelines.lsst.io with DM's own needs in mind, the documentation will also be immediately useful for other groups.
+From a user research perspective this is useful.
+If we build pipelines.lsst.io with DM's own needs in mind, the documentation will also be immediately useful for other groups.
 As the project matures, we can add tutorial documentation to help other user groups.

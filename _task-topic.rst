@@ -6,19 +6,19 @@ Task topic type
 The *task* topic type defines how tasks in the LSST Science Pipelines are documented.
 Tasks are basic algorithmic units that are assembled into processing pipelines.
 Astronomers will use task topics to understand these algorithms and identify implications for their science.
-Users will refer to task topic to learn how to configure and run pipelines.
+Users will refer to task topics to learn how to configure and run pipelines.
 Developers will use task topics to learn how to connect tasks into pipelines.
 Thus these topics are important for both astronomy end users and developers.
 
 Currently the Science Pipelines have two flavors of tasks: tasks, and *command line* tasks.
-Though command line tasks have additional capabilities over plain tasks, those capabilities are strict super sets over the regular task framework.
+Though command line tasks have additional capabilities over plain tasks, those capabilities are strict supersets over the regular task framework.
 In other words, a command line task is also a task.
-The topic type design reflects this making no significant distinction between tasks and command line tasks with two design principles.
+The topic type design reflects this by making no significant distinction between tasks and command line tasks with two design principles.
 First, command line task topics will have additional sections.
 Second, tasks and counterpart command line tasks are documented as the same identity.
 
 Soon, a new SuperTask framework will replace command line tasks (though like command line tasks, they are still subclasses of a base ``Task`` class).
-SuperTasks will allow a task to be activated from a variety of contexts, from command line to to cluster workflows.
+SuperTasks will allow a task to be activated from a variety of contexts, from command line to cluster workflows.
 By documenting the core task and extending that documentation with additional 'activation' details, the task topic type should gracefully evolve with the SuperTask framework's introduction.
 
 A task topic consists of the following components:
@@ -117,20 +117,18 @@ Wrapped inside a ``seealso`` directive, this component links to related content,
 
 - Tasks that commonly use this task (this helps a reader landing on a "sub task's" page find the appropriate driver task).
 - Tasks that can be used *instead of* this task (to link families of sub tasks).
-- Pages in the Processing and Frameworks sections of the Science Pipelines documentation.
-
-.. todo:: Link to Processing and Frameworks sections.
+- Pages in the :ref:`Processing <homepage-processing>` and :ref:`Frameworks <homepage-frameworks>` sections of the Science Pipelines documentation.
 
 .. _task-topic-configuration:
 
 Configuration
 -------------
 
-This section describes the task's configurations, defined in the task class's associated configuration class.
-Configuration parameters will be displayed similarly to attributes in Numpydoc with the following fields per configuration:
+This section describes the task's configurations defined in the task class's associated configuration class.
+Configuration parameters are displayed similarly to attributes in Numpydoc with the following fields per configuration:
 
 - Parameter name.
-- Parameter type. Ideally the parameter type will link to a documention topic for that type (such as a class's API reference).
+- Parameter type. Ideally the parameter type links to a documentation topic for that type (such as a class's API reference).
 - A description sentence or paragraph. The description should mention default values, caveats, and possibly an example.
 
 We anticipate that a reStructuredText directive can be built to automatically generate this topic component.
@@ -141,7 +139,7 @@ Entrypoint
 ----------
 
 The entrypoint section documents the task's 'run' method.
-Note that task run methods are not necessarily named 'run,' not do they necessarily share a uniform interface.
+Note that task run methods are not necessarily named 'run,' nor do they necessarily share a uniform interface.
 
 Initially this section will only contain the namespace of the run method, such as
 
@@ -226,8 +224,8 @@ Algorithm notes
 ---------------
 
 This section can contain extended discussion about an algorithm.
-Mathematical derivations, figures, algorithm workflow diagram, and literature citation can all be made in the Algorithm notes section.
+Mathematical derivations, figures, algorithm workflow diagrams, and literature citations can all be included in the Algorithm notes section.
 
 Note that this section is the definitive scientific description of an algorithm.
 Docstrings of methods and functions that (at least partially) implement an algorithm can defer to this section.
-This design makes it easier for scientific users to understand algorithms without following method call paths, while allow method and function docstrings to focus on technical implementation details (such as arguments, returns, exceptions, and so forth).
+This design makes it easier for scientific users to understand algorithms without following method call paths, while allowing method and function docstrings to focus on technical implementation details (such as arguments, returns, exceptions, and so forth).

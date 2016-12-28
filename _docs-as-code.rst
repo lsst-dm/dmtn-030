@@ -4,7 +4,7 @@ Documentation as code
 =====================
 
 The Science Pipelines documentation uses a *documentation-as-code* architecture.
-Documentation is stored in pipelines package repositories, and built by DM's standard continuous integration system Sphinx into a static HTML site that is published to the web with LSST the Docs.
+Documentation is stored and versioned in pipelines package repositories, and built by DM's standard continuous integration system with Sphinx_ into a static HTML site that is published to the web with `LSST the Docs <SQR-006>`_.
 This section outlines the basic technical design of the Science Pipelines documentation.
 
 .. _docs-in-packages:
@@ -21,11 +21,11 @@ A minimal ``doc/`` directory looks like::
      tasks/
      _static/
 
-Here, ``index.rst`` is a reStructuredText document we refer to as a *module topic*, described later.
-The ``tasks/`` directory hosts *task topic pages* for any pipeline tasks implemented in that module.
+Here, ``index.rst`` is a reStructuredText document we refer to as a :ref:`module topic <module-type>`, described later.
+The ``tasks/`` directory hosts :ref:`task topic pages <task-type>` for any pipeline tasks implemented in that module.
 The ``_static/`` directory is a space for non-reStructuredText content that is copied verbatim to the built site.
 
-Most Science Pipelines packages host a single *module*, but there are exceptions like ``afw``.
+Most Science Pipelines packages host a single :ref:`module <module-type>`, but there are exceptions like ``afw``.
 In this case, there is an additional level of directories::
 
    doc/
@@ -45,24 +45,24 @@ In this case, there is an additional level of directories::
      table/
 
 Each ``afw`` module subdirectory contains the ``index.rst``, ``tasks/`` and ``_static/`` structure.
-The root ``doc/index.rst`` file is a minimal file containing a toctree that is only used for local, single package documentation builds.
+The root ``doc/index.rst`` file is a minimal file containing a `toctree`_ that is only used for local, single package documentation builds.
 
 .. note::
 
-   The `doc/` directory was already used by the previous Doxygen-based documentation build system.
+   The ``doc/`` directory was already used by the previous Doxygen-based documentation build system.
    However, during the transition from Doxygen to Sphinx-based builds, we do not expect any conflicts since content for the two system reside in non-overlapping files (``.dox`` versus ``.rst`` files for Doxygen and Sphinx, respectively).
    It should be possible to continue to build a Doxygen version of the documentation while the new Sphinx site is being prepared.
 
 Per-package documentation builds
 --------------------------------
 
-Developers can build documentation for individual checked packages by running ``scons sphinx`` from the command line.
+Developers can build documentation for individual cloned packages by running ``scons sphinx`` from the command line.
 This matches the workflow already used for code development.
 Developers will build documentation for individual packages in development environments to preview changes to module documentation, including conceptual topics, examples, tasks, and API references.
 
 .. note::
 
-   The Doxygen-based build system uses a `scons doc` build command.
+   The Doxygen-based build system uses a ``scons doc`` build command.
    This command (notwithstanding a rename) will remain to support Doxygen generation of C++ API metadata.
 
 Internally, the ``scons sphinx`` command replaces the ``make html`` and ``sphinx-build`` drivers normally used for Sphinx documentation.
@@ -93,4 +93,4 @@ When pipelines_lsst_io_ is built, the ``doc/`` directories of each package is li
 With these linked package ``doc`` directories, the Sphinx build for ``pipelines_lsst_io`` is able to build all documentation simultaneously, and resolve all links within the project.
 
 The `LTD Mason tool <ltd-mason>`_ (see SQR-006_) was designed to make the package documentation links, assuming that lsstsw was being used (as it it is in the Jenkins environment).
-However, it may be more appropriate to make `pipelines_lsst_io` agnostic of lsstsw, which implies that `pipelines_lsst_io` should itself be an EUPS-managed package, and that its build logic should also be hosted in ``sconsUtils``.
+However, it may be more appropriate to make `pipelines_lsst_io`_ agnostic of lsstsw, which implies that `pipelines_lsst_io`_ should itself be an EUPS-managed package, and that its build logic should also be hosted in ``sconsUtils``.

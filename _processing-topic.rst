@@ -3,11 +3,11 @@
 Processing topic type
 =====================
 
-Processing topics are a practical platform that discuss how to calibrate and measure astronomy datasets with the LSST Science Pipelines.
+Processing topics are a practical platform that discuss how to calibrate, process, and measure astronomy datasets with the LSST Science Pipelines.
 As discussed in :ref:`homepage-design`, processing is organized around *contexts*, such as single frames, coaddition, or difference imaging.
 Each processing context has a main page that conforms to the processing topic type.
 
-As processing topic consists of the following components:
+Processing topics consist of the following components:
 
 - :ref:`Title <processing-title>`.
 - :ref:`Context <processing-context>`.
@@ -20,7 +20,7 @@ As processing topic consists of the following components:
 .. figure:: /_static/processing-mockup.svg
    :width: 100%
 
-   Mockup of processing topic type pages.
+   Mockup of processing topics.
 
 .. _processing-title:
 
@@ -40,7 +40,7 @@ Within a couple short paragraphs below the title, this component establishes the
 - Explain what the processing context *means* in non-jargon language.
   What data goes in? What data comes out?
 - Link to adjacent processing contexts.
-  For example, a single frame processing topic should link to the data ingest topic.
+  For example, a single frame processing topic should mention and link to the data ingest topic.
 - Mention and link to the main command line tasks used in this context.
 - Suggest and link to an introductory tutorial for this processing context.
 
@@ -66,8 +66,8 @@ Tutorials
 The Tutorials section links (as a ``toctree``) to tutorial topic pages that demonstrate processing real datasets in this context.
 These tutorials should be easily reproduced and run by readers; necessary example datasets should be provided.
 
-These tutorials might be designed to be run as a series across several processing context.
-For example, a tutorial on ingesting a dataset in the "ingest' context may be a pre-requisite tutorial for a processCcd tutorial in a "single frame processing" context.
+These tutorials might be designed to be run as a series across several processing contexts.
+For example, a tutorial on ingesting a dataset in the "ingest" context may be a pre-requisite for a ``processCcd`` tutorial in a "single frame processing" context.
 
 .. _processing-tasks:
 
@@ -79,8 +79,8 @@ This final section in a processing topic lists all command line tasks associated
 Links in this ``toctree`` are to :ref:`task topics <task-type>`.
 
 Note that only *command line* tasks associated with a context are listed here.
-This is done because the 
 Processing topics are designed to be approachable for end users of the Science Pipelines.
 Command line tasks are immediately usable, while sub-tasks are only details for configuration (that is, re-targettable sub tasks) or for developers of new pipelines.
 Thus mentioning only command line tasks gives users a curated list of runnable tasks.
-As a user gains experience with command line tasks like ``processCcd.py``, they will gradually learn about sub-tasks through links built into the `task topic` design, and thus graduate from new user to experience user and potential developer.
+As a user gains experience with command line tasks like ``processCcd.py``, they will gradually learn about sub-tasks through links built into the :ref:`task topic <task-type>` design.
+This pathway graduates a person from being a new to experienced user and even potentially a developer.

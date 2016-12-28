@@ -11,3 +11,5 @@
 .. _sphinx: http://www.sphinx-doc.org/
 .. _RFC-214: https://jira.lsstcorp.org/browse/RFC-214
 .. _LDM-151: https://ldm-151.lsst.io/v/draft
+.. _DM Developer Guide: https://developer.lsst.io
+.. _toctree: http://www.sphinx-doc.org/en/1.5.1/markup/toctree.html
