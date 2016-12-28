@@ -8,6 +8,7 @@
 
    A design discussion and implementation plan for the pipelines.lsst.io documentation project, including information design and topic templates.
 
+.. include:: _intro.rst
 .. include:: _scope.rst
 .. include:: _audience.rst
 .. include:: _docs-as-code.rst

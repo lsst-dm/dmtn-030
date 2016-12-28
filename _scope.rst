@@ -1,3 +1,5 @@
+.. _scope:
+
 Scope of the Science Pipelines documentation project
 ====================================================
 
