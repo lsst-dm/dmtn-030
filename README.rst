@@ -1,11 +1,12 @@
 .. image:: https://img.shields.io/badge/dmtn--030-lsst.io-brightgreen.svg
    :target: https://dmtn-030.lsst.io
-.. image:: https://travis-ci.org/lsst-dm/dmtn-030.svg
+   :alt: Technote website
+.. image:: https://img.shields.io/travis/lsst-dm/dmtn-030/master.svg?maxAge=2592000
    :target: https://travis-ci.org/lsst-dm/dmtn-030
-..
-  Uncomment this section and modify the DOI strings to include a Zenodo DOI badge in the README
-  .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.#####.svg
-     :target: http://dx.doi.org/10.5281/zenodo.#####
+   :alt: Travis build status
+.. image:: https://zenodo.org/badge/doi/10.5281/zenodo.228174.svg
+   :target: http://dx.doi.org/10.5281/zenodo.228174
+   :alt: doi:10.5281/zenodo.228174
 
 ###############################################
 DMTN-030 Science Pipelines Documentation Design
@@ -14,8 +15,6 @@ DMTN-030 Science Pipelines Documentation Design
 A design discussion and implementation plan for the pipelines.lsst.io documentation project, including information design and topic templates.
 
 View this technote at https://dmtn-030.lsst.io or see a preview of the current version in `this repo`_.
-
-
 
 Build this technical note
 =========================
@@ -56,7 +55,7 @@ In this metadata you can edit the technote's title, authors, publication date, e
 
 ****
 
-Copyright 2016 Association of Universities for Research in Astronomy
+Copyright 2016, 2017 Association of Universities for Research in Astronomy
 
 This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
 
