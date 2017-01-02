@@ -2,11 +2,7 @@
 
 .. sectnum::
 
-.. note::
-
-   **This technote is not yet published.**
-
-   A design discussion and implementation plan for the pipelines.lsst.io documentation project, including information design and topic templates.
+**DOI:** `10.5281/zenodo.228174 <https://doi.org/10.5281/zenodo.228174>`_
 
 .. include:: _intro.rst
 .. include:: _scope.rst
