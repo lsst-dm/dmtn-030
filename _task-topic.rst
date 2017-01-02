@@ -42,7 +42,7 @@ A task topic consists of the following components:
    Archives of documentation for the previous system are included in this technote.
 
    - :download:`How to Document a Task </_static/how-to-document-a-task.pdf>` (Confluence; September 23, 2014).
-   - :download:`AstrometryTask </_static/how-to-document-a-task.pdf>`: example of task documentation implemented in Doxygen.
+   - :download:`AstrometryTask </_static/astrometrytask-doxygen.pdf>`: example of task documentation implemented in Doxygen.
 
 .. _fig-task-mockup:
 

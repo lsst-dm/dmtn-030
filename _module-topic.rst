@@ -26,26 +26,26 @@ The module topic type consists of the following components:
 
 .. _module-title:
 
-Title component
----------------
+Title
+-----
 
-Since *module* is a Python-oriented term, the title should be formatted as: "python module name --- Short description."
+Since "module" is a Python-oriented term, the title should be formatted as: "python module name --- Short description."
 For example:
 
 | ``lsst.afw.table`` --- Table data structures.
 
 .. _module-summary:
 
-Summary paragraph component
----------------------------
+Summary paragraph
+-----------------
 
 This paragraph establishes the context of this module and lists key features.
 This section is intended to help a reader determine whether this module is relevant to their task.
 
 .. _module-see-also:
 
-See also component
-------------------
+See also
+--------
 
 Right after the summary paragraph, and within a ``seealso`` directive, this component links to other parts of the documentation that do not otherwise follow from the topic type design.
 For example, if the module is part of a framework, that framework's page is linked from here.
@@ -64,8 +64,8 @@ The ``lsst.validate.base`` prototype documentation (currently available at https
 
 .. _module-tasks:
 
-Tasks component
----------------
+Tasks
+-----
 
 This section lists and links to task topics for any tasks implemented by this module.
 The task topic type is discussed in :ref:`task-type`.
@@ -79,17 +79,17 @@ Minimally, this section should be a simple list where the task name is included 
 
 .. _module-api:
 
-Python and C++ API reference components
----------------------------------------
+Python and C++ API reference
+----------------------------
 
-These section lists and links to reference pages for all Python and C++ API objects.
+These sections list and link to reference pages for all Python and C++ API objects.
 Individual functions and classes are documented on separate pages.
 See :ref:`api-ref` for a discussion of API reference pages.
 
 .. _module-packaging:
 
-Packaging component
--------------------
+Packaging
+---------
 
 Modules exist inside EUPS packages.
 This section is designed to help a user understand how to access a module, and understand how this module's package relates to other packages in the Science Pipelines documentation by:
@@ -104,8 +104,8 @@ The package dependencies can be expressed as both lists and graph diagrams.
 
 .. _module-related-docs:
 
-Related documentation component
--------------------------------
+Related documentation
+---------------------
 
 Modules will be documented and discussed elsewhere.
 This section consists of a listing of other documents related to this module, including:

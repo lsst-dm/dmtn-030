@@ -63,7 +63,7 @@ Developers will build documentation for individual packages in development envir
 .. note::
 
    The Doxygen-based build system uses a ``scons doc`` build command.
-   This command (notwithstanding a rename) will remain to support Doxygen generation of C++ API metadata.
+   This command (notwithstanding a likely rename to ``scons doxygen``) will remain to support Doxygen generation of C++ API metadata.
 
 Internally, the ``scons sphinx`` command replaces the ``make html`` and ``sphinx-build`` drivers normally used for Sphinx documentation.
 By integrating with Sphinx's internal Python APIs, rather than using ``sphinx-build``, we avoid putting ``conf.py`` Sphinx project configuration information in each package's ``doc/`` directory.
@@ -92,5 +92,5 @@ When pipelines_lsst_io_ is built, the ``doc/`` directories of each package is li
 
 With these linked package ``doc`` directories, the Sphinx build for ``pipelines_lsst_io`` is able to build all documentation simultaneously, and resolve all links within the project.
 
-The `LTD Mason tool <ltd-mason>`_ (see SQR-006_) was designed to make the package documentation links, assuming that lsstsw was being used (as it it is in the Jenkins environment).
+The `LTD Mason tool <ltd-mason>`_ (see SQR-006_) was designed to make the package documentation links, assuming that lsstsw was being used (as it is in the Jenkins environment).
 However, it may be more appropriate to make `pipelines_lsst_io`_ agnostic of lsstsw, which implies that `pipelines_lsst_io`_ should itself be an EUPS-managed package, and that its build logic should also be hosted in ``sconsUtils``.

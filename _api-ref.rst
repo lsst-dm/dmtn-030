@@ -46,7 +46,7 @@ For each Python module namespace exported by ``lsst.validate.base``, we include 
 - Builds a table of contents in situ.
 - Builds a class inheritance diagram.
 
-To take advantage of ``automodapi``\ 's semi-automated API reference generation, LSST's Python modules need clean namespaces.
+To take advantage of ``automodapi``\ ’s semi-automated API reference generation, LSST's Python modules need clean namespaces.
 There are two techniques for achieving this:
 
 1. Modules should only export public APIs, using ``__all__``.
@@ -144,7 +144,7 @@ If anything, the module docstring may contain a one-sentence summary of the modu
 This summary appears as a subtitle of the module name in ``automodapi`` output.
 For example, in :numref:`fig-validate-base-api-table` the module docstring reads: "Framework for measuring and defining performance metrics that can be submitted to the SQUASH service."
 
-In summary, the Python API reference infrastructure created by the Numpy (Numpydoc) and Astropy (``automodapi``) projects is eminently useable for the Science Pipelines documentation without any modifications.
+In summary, the Python API reference infrastructure created by the Numpy (Numpydoc) and Astropy (``automodapi``) projects is eminently usable for the Science Pipelines documentation without any modifications.
 
 .. _daf-base-swig-api:
 
@@ -246,7 +246,7 @@ To emulate ``automodapi`` with standard Breathe_ directives, we first created a 
 
 The output of this ``toctree`` is shown in :numref:`fig-daf-base-module` (right).
 
-Each manually built class reference page uses Breathe_\ 's ``doxygen`` class directive.
+Each manually built class reference page uses Breathe_\ ’s ``doxygen`` class directive.
 An example for ``lsst::daf::base::Citizen``:
 
 .. code-block:: rst

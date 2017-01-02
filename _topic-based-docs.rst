@@ -6,7 +6,7 @@ Topic-based documentation
 The Science Pipelines documentation, following the proposed `LDM-493 Data Management Documentation Architecture <LDM-493>`_, will use *topic-based* content organization.
 In this approach, content is organized into self-contained, well-structured pieces that support a reader's current task, and that link the reader to other topics for related information.
 Topic-based content differs from books, research articles, and indeed, paper manuals, where a reader is expected to gradually accumulate knowledge and context through a preset narrative.
-In task-based documentation, readers drop into specific pages to support a specific objective, but can follow links to establish context, and in effect, build a personalized curriculum for learning and using the software.
+In topic-based documentation, readers drop into specific pages to support a specific objective, but can follow links to establish context, and in effect, build a personalized curriculum for learning and using the software.
 
 The topic-based documentation approach is widely employed by the technical writing community.
 Help sites from companies like `GitHub <https://help.github.com>`__ and `Slack <https://help.slack.com>`__ use topic-based documentation.
@@ -55,5 +55,4 @@ This means that each documentation page can be planned with an outline:
 - Known related documents that the page can link to, rather than duplicate.
 
 Thus many authors can work on separate topics in parallel, knowing that each topic conforms to a uniform type pattern, and is supported by other topics.
-In software architecture parlance, *topics have well-defined interfaces*.
-Topic-based documentation can be much more effectively planned and managed than traditional narrative writing.
+In software architecture parlance, *topics have well-defined interfaces*. Topic-based documentation can be much more effectively planned and managed than traditional narrative writing.

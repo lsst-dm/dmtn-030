@@ -5,17 +5,7 @@ Framework topic type
 
 Frameworks in the LSST Science Pipelines are collections of modules that provide coherent functionality.
 Rather than only documenting modules in isolation, the framework topic type is a platform for documenting overall concepts, design, and usage patterns for these frameworks that cross module bounds.
-
-A non-exhaustive list of frameworks in the Science Pipelines is:
-
-- Measurement framework.
-- Butler framework.
-- Task framework.
-- Observatory interface (obs) framework.
-- Modeling framework.
-- Geometry framework.
-- QA framework.
-- Build, packaging, and utility framework.
+Examples of frameworks were :ref:`listed earlier in the homepage design section <homepage-frameworks>`.
 
 Topic type components
 ---------------------

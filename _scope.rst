@@ -24,7 +24,7 @@ This package collection crosses DM team lines, but reflects how the software is 
 
 .. note::
 
-   A related issue is the name of the product itself.
+   A related issue is the name of the software product itself.
    This segment of the Data Management System does not have name; while the name "Stack" is often used, that refers to all software in the DMS.
 
    This technote uses the branding "LSST Science Pipelines" and "pipelines.lsst.io," though technically this is an appropriation of the collective name of work by the University of Washington and Princeton teams.

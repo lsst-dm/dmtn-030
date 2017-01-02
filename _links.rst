@@ -13,3 +13,5 @@
 .. _LDM-151: https://ldm-151.lsst.io/v/draft
 .. _DM Developer Guide: https://developer.lsst.io
 .. _toctree: http://www.sphinx-doc.org/en/1.5.1/markup/toctree.html
+.. _directive: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#directives
+.. _Twinkles: https://github.com/LSSTDESC/Twinkles

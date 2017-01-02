@@ -29,7 +29,7 @@ This area contains:
 - A blurb that introduces readers to the Science Pipelines.
 - Links to installation topics, and EUPS usage topics.
 - Links to release note topics.
-- An invitation try a quick tutorial that helps a reader understand what the Science Pipelines feel like to use.
+- An invitation to try a quick tutorial that helps a reader understand what the Science Pipelines feel like to use.
 - Links to topics describing how to contribute to the LSST Science Pipelines.
 - An explanation of how to get help with the LSST Science Pipelines (that is, link to https://community.lsst.org).
 
@@ -45,7 +45,7 @@ This is a distinct viewpoint from documenting the Science Pipelines's implementa
 Rather, the processing section focuses on how to organize data, use command line tasks to process data, and consume those outputs for scientific investigations.
 And while topics in the processing section defer to :ref:`task topics <task-type>` as definitive self-contained scientific descriptions of algorithms, the processing section is used to frame these command line tasks and help astronomers make judgments about how they are used for science.
 
-Based on the Twinkles pipeline, which uses the LSST Science Pipelines, we recognized that processing can be organized into *contexts*.
+Based on the Twinkles_ pipeline, which uses the LSST Science Pipelines, we recognized that processing can be organized into *contexts*.
 Each context has a well-defined type of input, well-defined types of outputs, and well-defined types of measurements.
 A core set of contexts is:
 
@@ -108,4 +108,4 @@ Each item is a link to a corresponding :ref:`module topic <module-type>`.
 This listing will be heavily used by developers seeking API references for the modules they are using on a day-to-day basis.
 
 These module topics are :ref:`imported from the doc/ directories <docs-in-packages>` of each Science Pipelines EUPS package.
-The homepage's module listing can be automatically compiled in a custom reStructuredText directive.
+The homepage's module listing can be automatically compiled in a custom `reStructuredText directive <directive>`_.

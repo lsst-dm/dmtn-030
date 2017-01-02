@@ -17,7 +17,7 @@ We identified the following groups:
 
 - **Construction-era science collaborations.** We find that most astronomers using the LSST Science Pipelines are not processing data, but rather are using it as a core library for the Simulations stack (such as the Metrics Analysis Framework to motivate the `Observing Strategy Whitepaper`_).
 
-- **DESC.** This collaboration is exceptional in that it wants to process data using the Science Pipelines, contribute packages (Twinkles) and provide algorithmic feedback. DESC needs:
+- **DESC.** This collaboration is exceptional in that it wants to process data using the Science Pipelines, contribute packages (Twinkles_), and provide algorithmic feedback. DESC needs:
 
   - Developer documentation (to support their own package development).
   - Algorithm background (to comment on).
@@ -30,10 +30,10 @@ We identified the following groups:
 
 - **Astronomers using the LSST Science Platform in operations.**
 
-  - Typical SDSS usage is: small queries to subset data; complex queries to get objects of interest.
+  - To some extent, LSST usage will be similar to that seen for SDSS: small queries to subset data; complex queries to get objects of interest.
   - Astronomers will want to run pipeline tasks on a subset of data with customized algorithms.
   - Astronomers will use the Butler to get and put datasets within their storage quota.
-  - Develop and test algorithms that may be proposed for incorporation in DRP (though an atypical scenario).
+  - Astronomers will develop and test algorithms that may be proposed for incorporation in DRP (though an atypical scenario).
 
 - **Other observatories and surveys.**
 

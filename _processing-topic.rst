@@ -35,7 +35,7 @@ For example, "Single frame processing" or "Multi-epoch processing."
 Context
 -------
 
-Within a couple short paragraphs below the title, this component establishes the topic's context:
+Within a couple of short paragraphs below the title, this component establishes the topic's context:
 
 - Explain what the processing context *means* in non-jargon language.
   What data goes in? What data comes out?
@@ -55,7 +55,7 @@ They should primarily be written as narrative glue to other types of documentati
 That is, these topics are guides into understanding the Science Pipelines from a practical data processing perspective.
 The first in depth topic should be an 'Overview' that describes the processing context itself, and introduces other in-depth topics and tutorials.
 
-Based on experience from Twinkles, a project using the LSST Science Pipelines, many of these topics can be divided into two halves: processing data in this context, and measuring objects from the products of that processing.
+Based on experience from Twinkles_, many of these topics can be divided into two halves: processing data in this context, and measuring objects from the products of that processing.
 Processing topic pages have the flexibility to organize in depth topics (and :ref:`tutorials <processing-tutorials>`, below) around themes like this.
 
 .. _processing-tutorials:
@@ -67,7 +67,7 @@ The Tutorials section links (as a ``toctree``) to tutorial topic pages that demo
 These tutorials should be easily reproduced and run by readers; necessary example datasets should be provided.
 
 These tutorials might be designed to be run as a series across several processing contexts.
-For example, a tutorial on ingesting a dataset in the "ingest" context may be a pre-requisite for a ``processCcd`` tutorial in a "single frame processing" context.
+For example, a tutorial on ingesting a dataset in the "ingest" context may be a prerequisite for a ``processCcd`` tutorial in a "single frame processing" context.
 
 .. _processing-tasks:
 
