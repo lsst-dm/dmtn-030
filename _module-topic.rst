@@ -96,7 +96,7 @@ This section is designed to help a user understand how to access a module, and u
 
 - Stating what package a module is part of.
 - Linking to that package's GitHub repository.
-- Stating what top-level packages include this module's package. This help readers understand what package to install.
+- Stating what top-level packages include this module's package. This will help readers understand what package to install.
 - Stating what packages depend on this module's package, distinguishing between direct and in-direct dependencies. This will help developers.
 - Stating what packages in the LSST Stack dependent on this package. Again, this will primarily help developers.
 
