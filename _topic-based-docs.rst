@@ -3,7 +3,7 @@
 Topic-based documentation
 =========================
 
-The Science Pipelines documentation, following the proposed `LDM-493 Data Management Documentation Architecture <LDM-493>`_, will use *topic-based* content organization.
+The Science Pipelines documentation, following the proposed `LDM-493 Data Management Documentation Architecture`_, will use *topic-based* content organization.
 In this approach, content is organized into self-contained, well-structured pieces that support a reader's current task, and that link the reader to other topics for related information.
 Topic-based content differs from books, research articles, and indeed, paper manuals, where a reader is expected to gradually accumulate knowledge and context through a preset narrative.
 In topic-based documentation, readers drop into specific pages to support a specific objective, but can follow links to establish context, and in effect, build a personalized curriculum for learning and using the software.
@@ -12,7 +12,7 @@ The topic-based documentation approach is widely employed by the technical writi
 Help sites from companies like `GitHub <https://help.github.com>`__ and `Slack <https://help.slack.com>`__ use topic-based documentation.
 Open source projects like `Astropy <https://docs.astropy.org>`__ also use elements of topic-based documentation philosophy.
 `Wikipedia <https://en.wikipedia.org/wiki/Topic-based_authoring>`__ is an excellent example of organically-evolving topic-based documentation.
-The (currently proposed) `LDM-493 Data Management Documentation Architecture <LDM-493>`_ also identifies topic-based documentation as the information architecture of DM's user guides.
+The (currently proposed) `LDM-493 Data Management Documentation Architecture`_ also identifies topic-based documentation as the information architecture of DM's user guides.
 Every Page is Page One by Mark Baker,\ [#baker]_ hereafter referred to as *EPPO*, describes the motivation and principles of topic-based documentation. 
 This section is intended to brief the Data Management team on topic-based documentation concepts, following EPPO.
 

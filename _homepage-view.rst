@@ -108,4 +108,4 @@ Each item is a link to a corresponding :ref:`module topic <module-type>`.
 This listing will be heavily used by developers seeking API references for the modules they are using on a day-to-day basis.
 
 These module topics are :ref:`imported from the doc/ directories <docs-in-packages>` of each Science Pipelines EUPS package.
-The homepage's module listing can be automatically compiled in a custom `reStructuredText directive <directive>`_.
+The homepage's module listing can be automatically compiled in a custom `reStructuredText directive`_.

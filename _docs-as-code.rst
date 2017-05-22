@@ -4,7 +4,7 @@ Documentation as code
 =====================
 
 The Science Pipelines documentation uses a *documentation-as-code* architecture.
-Documentation is stored and versioned in pipelines package repositories, and built by DM's standard continuous integration system with Sphinx_ into a static HTML site that is published to the web with `LSST the Docs <SQR-006>`_.
+Documentation is stored and versioned in pipelines package repositories, and built by DM's standard continuous integration system with Sphinx_ into a static HTML site that is published to the web with `LSST the Docs`_.
 This section outlines the basic technical design of the Science Pipelines documentation.
 
 .. _docs-in-packages:
@@ -92,5 +92,5 @@ When pipelines_lsst_io_ is built, the ``doc/`` directories of each package is li
 
 With these linked package ``doc`` directories, the Sphinx build for ``pipelines_lsst_io`` is able to build all documentation simultaneously, and resolve all links within the project.
 
-The `LTD Mason tool <ltd-mason>`_ (see SQR-006_) was designed to make the package documentation links, assuming that lsstsw was being used (as it is in the Jenkins environment).
+The `LTD Mason`_ tool (see SQR-006_) was designed to make the package documentation links, assuming that lsstsw was being used (as it is in the Jenkins environment).
 However, it may be more appropriate to make `pipelines_lsst_io`_ agnostic of lsstsw, which implies that `pipelines_lsst_io`_ should itself be an EUPS-managed package, and that its build logic should also be hosted in ``sconsUtils``.

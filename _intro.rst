@@ -10,7 +10,7 @@ Comprehensive and usable documentation is prerequisite for the success of these 
 This technical note describes a design for the LSST Science Pipeline's user guide.
 The initial design was developed by the authors at a design sprint held in Tucson, AZ, over December 7 to 9, 2016.\ [#meeting-notes]_
 As the documentation design is implemented and improved, this technical note will be updated and serve as a reference for the project's design philosophy and direction.
-The LSST Science Pipelines documentation is implemented consistently with `LDM-493 Data Management Documentation Architecture <LDM-493>`_\ ’s *user guide* project class.
+The LSST Science Pipelines documentation is implemented consistently with `LDM-493 Data Management Documentation Architecture`_\ ’s *user guide* project class.
 
 .. [#meeting-notes] The meeting notes are archived with this technical note as a PDF, and also available online at http://ls.st/507.
 
