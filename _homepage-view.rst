@@ -103,9 +103,20 @@ Each item is a link to a corresponding :ref:`framework topic <framework-type>`.
 Modules section
 ---------------
 
-The final section of the homepage is a comprehensive listing of modules in the LSST Science Pipelines.
+This section of the homepage is a comprehensive listing of modules in the LSST Science Pipelines.
 Each item is a link to a corresponding :ref:`module topic <module-type>`.
 This listing will be heavily used by developers seeking API references for the modules they are using on a day-to-day basis.
 
 These module topics are :ref:`imported from the doc/ directories <docs-in-packages>` of each Science Pipelines EUPS package.
 The homepage's module listing can be automatically compiled in a custom `reStructuredText directive`_.
+
+.. _homepage-packages:
+
+Packages section
+----------------
+
+The final section of the homepage is a comprehensive listing of EUPS packages in the LSST Science Pipelines.
+Each item is a link to a corresponding :ref:`package topic <package-type>`.
+This package documentation is useful for developers who are working with Git repositories and individual EUPS packages in the LSST Science Pipelines.
+
+Like modules, these package topics are :ref:`provided by the packages themselves <docs-in-packages>`.

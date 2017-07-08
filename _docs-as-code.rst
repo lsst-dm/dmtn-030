@@ -47,6 +47,7 @@ A package provides two types of content:
 2. **Documentation for the package itself** such as ``afw``.
    This documentation concerns the Git repository itself and may provide developer documentation that is not oriented around Python modules.
    In fact, some packages, like ``afwdata`` or ``verify_metrics``, do not have any APIs and are entirely documented through this type of documentation.
+   We describe this content in :ref:`package-type`.
 
 Documentation of these two types are packaged into directories inside a package's ``doc/`` directory.
 For example, the ``afw`` package (which provides several Python modules) has documentation arranged like this::

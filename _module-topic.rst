@@ -14,7 +14,6 @@ The module topic type consists of the following components:
 - :ref:`Tasks <module-tasks>`.
 - :ref:`Python API reference <module-api>`.
 - :ref:`C++ API reference <module-api>`.
-- :ref:`Packaging <module-packaging>`.
 - :ref:`Related documentation <module-related-docs>`.
 
 .. _fig-module-mockup:
@@ -85,22 +84,6 @@ Python and C++ API reference
 These sections list and link to reference pages for all Python and C++ API objects.
 Individual functions and classes are documented on separate pages.
 See :ref:`api-ref` for a discussion of API reference pages.
-
-.. _module-packaging:
-
-Packaging
----------
-
-Modules exist inside EUPS packages.
-This section is designed to help a user understand how to access a module, and understand how this module's package relates to other packages in the Science Pipelines documentation by:
-
-- Stating what package a module is part of.
-- Linking to that package's GitHub repository.
-- Stating what top-level packages include this module's package. This will help readers understand what package to install.
-- Stating what packages depend on this module's package, distinguishing between direct and in-direct dependencies. This will help developers.
-- Stating what packages in the LSST Stack dependent on this package. Again, this will primarily help developers.
-
-The package dependencies can be expressed as both lists and graph diagrams.
 
 .. _module-related-docs:
 
