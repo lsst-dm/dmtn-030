@@ -14,5 +14,6 @@
 .. include:: _framework-topic.rst
 .. include:: _module-topic.rst
 .. include:: _task-topic.rst
+.. include:: _package-topic.rst
 .. include:: _api-ref.rst
 .. include:: _links.rst
