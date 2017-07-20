@@ -136,7 +136,7 @@ When pipelines_lsst_io_ is built, the package, module, and ``_static`` documenta
         ..
 
 Module documentation directories are symlinked into pipelines_lsst_io_\ ’s ``modules/`` directory.
-Likewise, package documentation directories are symlinked into pipelines_lsst_io_\ ’s ``packages/`` directory. With all documentation content directories linked  into the pipelines_lsst_io_ directory, Sphinx is able to build the LSST Science Pipelines documentation if it were a unified project.
+Likewise, package documentation directories are symlinked into pipelines_lsst_io_\ ’s ``packages/`` directory. With all documentation content directories linked into the pipelines_lsst_io_ directory, Sphinx is able to build the LSST Science Pipelines documentation as if it were a unified project.
 
 Packages declare their module, package, and ``_static`` documentation directories with their own ``doc/manifest.yaml`` files.
 As an example, the ``doc/manifest.yaml`` file included in ``afw`` may look like this:
