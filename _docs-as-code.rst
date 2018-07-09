@@ -173,15 +173,14 @@ As an example, the ``doc/manifest.yaml`` file included in ``afw`` may look like 
    statics:
      - "_static/afw"
 
-The tool responsible for linking package documentation and running the Sphinx build is ``build-stack-docs``, included in the documenteer_ project.
+The tool responsible for linking package documentation and running the Sphinx build is ``stack-docs``, included in the documenteer_ project.
 
 .. _per-package-builds:
 
 Per-package documentation builds
 --------------------------------
 
-Developers can build documentation for individual cloned packages by running ``scons sphinx`` from the command line.
-This matches the workflow already used for code development.
+Developers can build documentation for individual cloned packages by running ``package-docs`` from the command line, a tool included in the documenteer_ project.
 Developers will build documentation for individual packages in development environments to preview changes to module documentation, including conceptual topics, examples, tasks, and API references.
 
 .. note::
@@ -189,9 +188,9 @@ Developers will build documentation for individual packages in development envir
    The Doxygen-based build system uses a ``scons doc`` build command.
    This command (notwithstanding a likely rename to ``scons doxygen``) will remain to support Doxygen generation of C++ API metadata.
 
-Internally, the ``scons sphinx`` command replaces the ``make html`` and ``sphinx-build`` drivers normally used for Sphinx documentation.
-By integrating with Sphinx's internal Python APIs, rather than using ``sphinx-build``, we avoid putting ``conf.py`` Sphinx project configuration information in each package's ``doc/`` directory.
-Instead, Sphinx configuration is centrally managed in SQuaRE's documenteer_ package, through sconsUtils_.
+The ``stack-docs`` and ``package-docs`` commands replace the ``make html`` and ``sphinx-build`` drivers normally used for Sphinx documentation.
+By integrating with Sphinx's internal Python APIs we avoid having to maintain separate ``Makefile`` files in each package to configure the Sphinx build.
+Instead, Sphinx configuration is centrally managed in SQuaRE's documenteer_ package.
 
 .. note::
 
