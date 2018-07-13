@@ -4,6 +4,7 @@ Module topic type
 =================
 
 The module topic type comprehensively documents a *module* as an entrypoint to task and API references associated with a specific part of the codebase.
+Module topics are the ``index.rst`` files in the :ref:`module documentation directories <docs-in-packages>` of packages.
 
 The module topic type consists of the following components:
 

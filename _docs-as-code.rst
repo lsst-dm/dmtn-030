@@ -38,15 +38,16 @@ Organization of documentation in packages
 Each EUPS-managed LSST Science Pipelines package includes a ``doc/`` directory that contains documentation specific to that package.
 The arrangement of documentation *within* the ``doc/`` directory is motivated by the need to have package documentation mesh into the root ``pipelines_lsst_io`` project.
 
-A package provides two types of content:
+Packages can provide two types of content:
 
-1. **Documentation for Python modules,** such as ``lsst.afw.table``.
+1. **Documentation for Python modules,** such as ``lsst.afw.table``, and their corresponding C++ namespaces.
    This documentation content is oriented towards the code base, APIs, and its usage.
    The bulk of Science Pipelines documentation is organized around Python modules.
    We describe this content further in :ref:`module-type`.
-2. **Documentation for the package itself** such as ``afw``.
-   This documentation concerns the Git repository itself and may provide developer documentation that is not oriented around Python modules.
-   In fact, some packages, like ``afwdata`` or ``verify_metrics``, do not have any APIs and are entirely documented through this type of documentation.
+
+2. **Documentation for the package**.
+   This documentation concerns the Git repository itself.
+   This type of content is used in packages that do not provide a Python module, such as ``afwdata`` and ``verify_metrics``.
    We describe this content in :ref:`package-type`.
 
 Documentation of these two types are packaged into directories inside a package's ``doc/`` directory.
@@ -59,9 +60,6 @@ For example, the ``afw`` package (which provides several Python modules) has doc
      _static/
        afw/
          .. static content downloads
-     afw/
-       index.rst
-       .. additional content
      lsst.afw.cameraGeom/
        index.rst
        ..
@@ -93,9 +91,6 @@ For example, the ``afw`` package (which provides several Python modules) has doc
        index.rst
        ..
 
-Package-oriented documentation is contained in a directory named after the package/Git repository itself.
-For ``afw``, this is the ``doc/afw/`` directory.
-
 Each module's documentation is contained in a directory named after the Python namespace of the module itself.
 For example, ``doc/lsst.afw.cameraGeom``.
 
@@ -104,6 +99,22 @@ In Sphinx, "static" files are directly copied to the output built without interm
 These could be PDFs or tarball downloads.
 This static content is stored in a ``_static/`` directory.
 So that static content from all packages can be integrated, each package must store static content in a sub-directory of the ``_static`` directory, such as ``_static/afw``.
+
+Data-only packages, like ``afwdata``, have package documentation directories named after the package/Git repository itself.
+For ``afwdata``, this is the ``doc/afwdata/`` directory::
+
+   doc/
+     index.rst
+     manifest.yaml
+     conf.py
+     _static/
+       afwdata/
+         .. static content downloads
+     afwdata/
+       index.rst
+       ..
+
+Data-only packages do not have module documentation directories since they do not provide Python modules or C++ namespaces.
 
 Each package also has ``doc/conf.py`` and ``doc/index.rst`` files, these facilitate :ref:`single-package development builds <per-package-builds>`.
 
@@ -129,7 +140,7 @@ When pipelines_lsst_io_ is built, the package, module, and ``_static`` documenta
         lsst.afw.cameraGeom/ -> link to /afw/doc/lsst.afw.cameraGeom/
         ..
       packages/
-        afw/ -> link to /afw/doc/afw/
+        afwdata/ -> link to /afwdata/doc/afwdata/
         ..
       _static
         afw/ -> link to /afw/doc/_static/afw
@@ -142,9 +153,6 @@ Packages declare their module, package, and ``_static`` documentation directorie
 As an example, the ``doc/manifest.yaml`` file included in ``afw`` may look like this:
 
 .. code-block:: yaml
-
-   # Name of the package and also name of the package doc directory
-   package: "afw"
 
    # Names of module doc directories;
    # same as Python namespaces.
@@ -165,15 +173,14 @@ As an example, the ``doc/manifest.yaml`` file included in ``afw`` may look like 
    statics:
      - "_static/afw"
 
-The tool responsible for linking package documentation and running the Sphinx build is ``build-stack-docs``, included in the documenteer_ project.
+The tool responsible for linking package documentation and running the Sphinx build is ``stack-docs``, included in the documenteer_ project.
 
 .. _per-package-builds:
 
 Per-package documentation builds
 --------------------------------
 
-Developers can build documentation for individual cloned packages by running ``scons sphinx`` from the command line.
-This matches the workflow already used for code development.
+Developers can build documentation for individual cloned packages by running ``package-docs`` from the command line, a tool included in the documenteer_ project.
 Developers will build documentation for individual packages in development environments to preview changes to module documentation, including conceptual topics, examples, tasks, and API references.
 
 .. note::
@@ -181,9 +188,9 @@ Developers will build documentation for individual packages in development envir
    The Doxygen-based build system uses a ``scons doc`` build command.
    This command (notwithstanding a likely rename to ``scons doxygen``) will remain to support Doxygen generation of C++ API metadata.
 
-Internally, the ``scons sphinx`` command replaces the ``make html`` and ``sphinx-build`` drivers normally used for Sphinx documentation.
-By integrating with Sphinx's internal Python APIs, rather than using ``sphinx-build``, we avoid putting ``conf.py`` Sphinx project configuration information in each package's ``doc/`` directory.
-Instead, Sphinx configuration is centrally managed in SQuaRE's documenteer_ package, through sconsUtils_.
+The ``stack-docs`` and ``package-docs`` commands replace the ``make html`` and ``sphinx-build`` drivers normally used for Sphinx documentation.
+By integrating with Sphinx's internal Python APIs we avoid having to maintain separate ``Makefile`` files in each package to configure the Sphinx build.
+Instead, Sphinx configuration is centrally managed in SQuaRE's documenteer_ package.
 
 .. note::
 

@@ -4,6 +4,13 @@
 
 **DOI:** `10.5281/zenodo.228174 <https://doi.org/10.5281/zenodo.228174>`_
 
+.. note::
+
+   This technote describes the design of the LSST Science Pipelines Documentation.
+   As this design is implemented, this design documentation may not be updated.
+   Developers and writers should see the `DM Developer Guide`_ for up-to-date information, particularly on how to write different types of documentation topics.
+   This document remains useful for describing the design motivation behind the documentation system.
+
 .. include:: _intro.rst
 .. include:: _scope.rst
 .. include:: _audience.rst
